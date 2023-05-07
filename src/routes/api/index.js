@@ -18,10 +18,6 @@ const defaultRoutes = [
     route: userRoute,
   },
   {
-    path: '/transactions',
-    route: transactionRoute,
-  },
-  {
     path: '/examples',
     route: exampleRoute,
   },
