@@ -1,6 +1,5 @@
 const express = require('express');
 const authRoute = require('./auth.route');
-const transactionRoute = require('./transaction.route');
 const exampleRoute = require('./example.route');
 const healthRoute = require('./health.route');
 const userRoute = require('./user.route');

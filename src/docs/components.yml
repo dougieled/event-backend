@@ -22,31 +22,6 @@ components:
         lastName: User
         role: user
 
-    Transaction:
-      type: object
-      properties:
-        id:
-          type: string
-        description:
-          type: string
-        amount:
-          type: number
-        nativeCurrency:
-          type: string
-        isDeposit:
-          type: boolean
-        timestamp:
-          type: string
-        userId:
-          type: string
-      example:
-        id: 5ebac534954b54139806c112
-        description: Test Description
-        amount: 411
-        nativeCurrency: GBP
-        isDeposit: true
-        timestamp: 2011-09-11T11:00:00
-
     Token:
       type: object
       properties:
