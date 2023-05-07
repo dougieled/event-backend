@@ -22,6 +22,23 @@ components:
         lastName: User
         role: user
 
+    Company:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        active:
+          type: boolean
+      example:
+        id: 5ebac534954b54139806c112
+        name: Test Company
+        description: Test company description
+        active: true
+
     Token:
       type: object
       properties:

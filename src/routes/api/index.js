@@ -1,6 +1,8 @@
 const express = require('express');
 const authRoute = require('./auth.route');
 const exampleRoute = require('./example.route');
+const companyRoute = require('./company.route');
+const loyaltyCardRoute = require('./loyaltyCard.route');
 const healthRoute = require('./health.route');
 const userRoute = require('./user.route');
 const docsRoute = require('./docs.route');
@@ -20,6 +22,14 @@ const defaultRoutes = [
   {
     path: '/examples',
     route: exampleRoute,
+  },
+  {
+    path: '/company',
+    route: companyRoute,
+  },
+  {
+    path: '/loyalty-card',
+    route: loyaltyCardRoute,
   },
   {
     path: '/health',
