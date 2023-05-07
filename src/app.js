@@ -17,7 +17,7 @@ const ApiError = require('./utils/ApiError');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Live!');
+  res.send('Live Event-Backend!');
 });
 
 if (config.env !== 'test') {
