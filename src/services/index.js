@@ -6,3 +6,5 @@ module.exports.healthService = require('./health.service');
 module.exports.exampleService = require('./example.service');
 module.exports.companyService = require('./company.service');
 module.exports.loyaltyCardService = require('./loyaltyCard.service');
+module.exports.userLoyaltyCardService = require('./userLoyaltyCard.service');
+module.exports.loyaltyRedeemService = require('./loyaltyRedeem.service');

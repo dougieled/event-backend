@@ -3,6 +3,7 @@ const authRoute = require('./auth.route');
 const exampleRoute = require('./example.route');
 const companyRoute = require('./company.route');
 const loyaltyCardRoute = require('./loyaltyCard.route');
+const userLoyaltyCardRoute = require('./userLoyaltyCard.route');
 const healthRoute = require('./health.route');
 const userRoute = require('./user.route');
 const docsRoute = require('./docs.route');
@@ -30,6 +31,10 @@ const defaultRoutes = [
   {
     path: '/loyalty-card',
     route: loyaltyCardRoute,
+  },
+  {
+    path: '/user-loyalty-card',
+    route: userLoyaltyCardRoute,
   },
   {
     path: '/health',

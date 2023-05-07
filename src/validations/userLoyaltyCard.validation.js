@@ -1,16 +1,12 @@
 const Joi = require('joi');
 const { objectId } = require('./custom.validation');
 
-const createCompany = {
-  body: Joi.object().keys({
-    name: Joi.string().required(),
-    description: Joi.string(),
-  }),
+const createUserLoyaltyCard = {
+  body: Joi.object(),
 };
 
-const getCompanies = {
+const getUserLoyaltyCards = {
   query: Joi.object().keys({
-    name: Joi.string(),
     active: Joi.boolean(),
     sortBy: Joi.string(),
     limit: Joi.number().integer(),
@@ -18,13 +14,13 @@ const getCompanies = {
   }),
 };
 
-const getCompanyByID = {
+const getUserLoyaltyCardByID = {
   params: Joi.object().keys({
     id: Joi.string().custom(objectId),
   }),
 };
 
-const updateCompany = {
+const updateUserLoyaltyCard = {
   params: Joi.object().keys({
     id: Joi.required().custom(objectId),
   }),
@@ -32,22 +28,23 @@ const updateCompany = {
     .keys({
       name: Joi.string().required(),
       description: Joi.string(),
+      type: Joi.string(),
+      rewardCount: Joi.number().required(),
       active: Joi.boolean(),
-      id: Joi.string(),
     })
     .min(1),
 };
 
-const deleteCompany = {
+const deleteLoyaltyCard = {
   params: Joi.object().keys({
     id: Joi.string().custom(objectId),
   }),
 };
 
 module.exports = {
-  createCompany,
-  getCompanies,
-  getCompanyByID,
-  updateCompany,
-  deleteCompany,
+  createUserLoyaltyCard,
+  getUserLoyaltyCards,
+  getUserLoyaltyCardByID,
+  updateUserLoyaltyCard,
+  deleteLoyaltyCard,
 };

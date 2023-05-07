@@ -15,6 +15,7 @@ const companySchema = mongoose.Schema(
     },
     active: {
       type: Boolean,
+      default: true,
       required: true,
     },
     userId: {

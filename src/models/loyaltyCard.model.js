@@ -24,6 +24,7 @@ const loyaltyCardSchema = mongoose.Schema(
     },
     active: {
       type: Boolean,
+      default: true,
       required: true,
     },
     companyId: {
