@@ -1,0 +1,7 @@
+Follow example files
+
+Create Model -> Validations -> Service -> Controller -> Route
+Best to copy example file and change as needed
+
+
+CLOUD RUN -> Deploy
