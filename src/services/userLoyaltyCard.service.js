@@ -21,7 +21,7 @@ const handleCreatingLoyaltyRedeem = async (req) => {
     await LoyaltyRedeem.create({
       userId: req.user.id,
       loyaltyCardId: req.params.loyaltyCardId,
-      userLoyaltyIds: array.map((x) => x.id).join(','),
+      userLoyaltyIds: array.map((x) => x.id).join(', '),
     });
   }
 };
